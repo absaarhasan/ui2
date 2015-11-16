@@ -1,0 +1,114 @@
+$base-font-size: 20px;
+$bfs: $base-font-size;
+
+.mobile{
+
+  display:none;
+}
+
+body {
+
+  background-image: url('../images/bg_wp_2500X1750.jpg');
+
+}
+
+/*------------- SPLASH BANNER -----------------*/
+
+header.page-head {
+
+  h1{
+    font-size: em(150px, $bfs);
+    line-height: em(150px, $bfs);
+    top: em(40px, $bfs);
+    right: 5%;
+  }
+
+
+  h2{
+    font-size: em(75px, $bfs);
+    line-height: em(75px, $bfs);
+    left: 5%;
+    bottom: em(40px, $bfs);
+  }
+
+  h1.min {
+    font-size:em(70px, $bfs);
+    line-height: em(50px, $bfs);
+    top:em(20px, $bfs);
+    text-indent: em(-3px, $bfs);
+
+  }
+
+  button {
+    top:em(20px, $bfs);
+    width:em(90px, $bfs);
+    height:em(50px, $bfs);
+    line-height:0;
+  }
+
+
+}
+
+/*------------- MINIMISED HEAD -----------------*/
+
+header.page-head.min {
+
+  height:em(90px, $bfs);
+
+  h1.min {
+
+    left: 5%;
+
+  }
+
+  button {
+
+    right: 5%;
+
+  }
+
+
+}
+
+/*------------- MAIN SECTION -----------------*/
+
+section.main {
+
+
+  h2{
+    margin: 0 5%;
+    padding: em(25px, $bfs) 0;
+    font-size:em(45px, $bfs);
+  }
+
+  section.display {
+    padding: em(25px, $bfs) 5%;
+    background-image: url('../images/floral_bg_tile_250X250.jpg ');
+    background-size: em(250px, $bfs) em(250px, $bfs);
+  }
+
+}
+
+/*------------- HOME DISPLAY -----------------*/
+
+section.display {
+
+  div.screen {
+
+
+  }
+}
+
+
+/*------------- PAGE FOOT -----------------*/
+
+footer{
+
+  p{
+
+    font-size:em(20px, $bfs);
+    margin: 0 5%;
+    padding: em(35px, $bfs) 0;
+  }
+
+}

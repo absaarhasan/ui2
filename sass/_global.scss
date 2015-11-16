@@ -1,0 +1,253 @@
+/*------------- GLOBAL VARS -----------------*/
+
+$color1: #fefd3e; //yellow
+$color2: #fff;
+$color3: #ccc; //strap txt
+
+$color4: #a1a1a1; //h1 txt
+
+$color4: #a1a1a1; // head bg
+
+
+
+/*------------- FUNCTIONS -----------------*/
+
+@function em($target, $context) {
+  @if $target == 0px { @return 0 }
+  @return $target / $context + 0rem;
+}
+
+/*------------- MIXINS -----------------*/
+
+@mixin drop-shadow ($x, $y, $blur, $spread, $alpha) {
+  -webkit-box-shadow: $x $y $blur $spread rgba(2,18,28, $alpha);
+  -moz-box-shadow:    $x $y $blur $spread rgba(2,18,28, $alpha);
+  box-shadow:         $x $y $blur $spread rgba(2,18,28, $alpha);
+}
+
+@mixin transition ($property, $time, $type) {
+  -webkit-transition: $property $time $type;
+  -moz-transition: $property $time $type;
+  -o-transition: $property $time $type;
+  -ms-transition: $property $time $type;
+  transition: $property $time $type;
+}
+
+@mixin notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+/*------------- GLOBAL STYLES -----------------*/
+
+* {
+
+  border:0;
+  outline:0;
+  margin:0;
+  padding:0;
+  font-family: 'filson-pro'; //200,900
+
+}
+
+body {
+
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+/*------------- SPLASH BANNER -----------------*/
+
+header.page-head {
+
+  background-color:$color4;
+  position:fixed;
+  z-index:10;
+  height:100%;
+  width:100%;
+  box-sizing: border-box;
+
+  @include transition(height, 0.15s, ease-out);
+
+  @include drop-shadow(0px, 4px, 8px, 2px, 0.25);
+
+
+  h1 {
+    color:$color2;
+    font-weight:900;
+
+    position:absolute;
+
+    @include transition(top, 0.15s, ease-out);
+
+    span{
+      color:$color1;
+      line-height:inherit;
+    }
+  }
+
+
+  h2 {
+    font-weight:200;
+    color:$color3;
+    position:absolute;
+    opacity:1;
+
+    @include transition(opacity, 0.2s, ease-out);
+    @include transition(bottom, 0.2s, ease-out);
+
+  }
+
+  /* hidden mini head items */
+
+  h1.min {
+
+    position:absolute;
+    left: -50%;
+
+
+    @include transition(left, 0.15s, ease-out);
+
+
+  }
+
+  button {
+    position:absolute;
+    right: -50%;
+    background-color:transparent;
+
+
+    @include transition(right, 0.15s, ease-out);
+
+
+    text-indent: -99999px;
+    overflow:hidden;
+    background-image: url('../images/menu_button.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &:hover, &:active {
+      background-image: url('../images/menu_button_hover.svg');
+    }
+  }
+}
+
+
+/*------------- MINIMISED HEAD -----------------*/
+
+header.page-head.min {
+
+
+
+  h1 {
+
+    top:-400px;
+  }
+
+  h2{
+    opacity:0;
+    bottom: 120%;
+  }
+
+  button {
+
+    @include notransition();
+  }
+
+
+}
+
+/*------------- MAIN BANNER -----------------*/
+
+section.banner{
+
+
+  height:1000px;
+  @include transition(right, 0.6s, ease-out);
+
+}
+
+section.banner.min{
+
+
+  height:400px;
+  @include transition(height, 0.2s, ease-out);
+
+}
+
+/*------------- MAIN SECTION -----------------*/
+
+section.main{
+
+  background-color:$color2;
+
+
+  h2{
+
+    color:$color4;
+    font-weight:200;
+
+  }
+
+
+  section.display {
+
+    background-repeat: repeat;
+
+
+  }
+
+}
+
+/*------------- HOME DISPLAY -----------------*/
+
+section.display {
+
+  line-height:0;
+  letter-spacing: 0;
+  font-size:0;
+
+  div.screen {
+
+
+    border-left:1px solid transparent;
+    border-right:1px solid transparent;
+    width:50%;
+    display: inline-block;
+    box-sizing: border-box;
+
+    img {
+
+      width:100%;
+      height: auto;
+    }
+  }
+}
+
+/*------------- PAGE FOOT -----------------*/
+
+
+footer{
+
+  p{
+
+    color:$color4;
+    font-weight:200;
+
+  }
+}
+
+
+
+
+
+
+
+
