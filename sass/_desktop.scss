@@ -12,30 +12,18 @@ body {
 
 }
 
-/*------------- SPLASH BANNER -----------------*/
+/*------------- PAGE HEAD -----------------*/
 
 header.page-head {
 
-  h1{
-    font-size: em(150px, $bfs);
-    line-height: em(150px, $bfs);
-    top: em(40px, $bfs);
-    right: 5%;
-  }
+  height:em(90px, $bfs);
 
-
-  h2{
-    font-size: em(75px, $bfs);
-    line-height: em(75px, $bfs);
-    left: 5%;
-    bottom: em(40px, $bfs);
-  }
-
-  h1.min {
+  h1.logo {
     font-size:em(70px, $bfs);
     line-height: em(50px, $bfs);
     top:em(20px, $bfs);
     text-indent: em(-3px, $bfs);
+    left: 5%;
 
   }
 
@@ -44,31 +32,40 @@ header.page-head {
     width:em(90px, $bfs);
     height:em(50px, $bfs);
     line-height:0;
+    right: 5%;
   }
 
-
-}
-
-/*------------- MINIMISED HEAD -----------------*/
-
-header.page-head.min {
-
-  height:em(90px, $bfs);
-
-  h1.min {
-
-    left: 5%;
-
-  }
-
-  button {
+  h1.splash {
+    font-size: em(150px, $bfs);
+    line-height: em(150px, $bfs);
 
     right: 5%;
-
   }
 
 
+  h2.splash {
+    font-size: em(75px, $bfs);
+    line-height: em(75px, $bfs);
+    left: 5%;
+    bottom: em(40px, $bfs);
+  }
+
 }
+
+/*------------- SPLASH PAGE -----------------*/
+
+header.page-head.splash {
+  h1.splash {
+    top: em(40px, $bfs);
+  }
+
+  h2.splash {
+
+    bottom: em(40px, $bfs);
+    opacity:1;
+  }
+}
+
 
 /*------------- MAIN SECTION -----------------*/
 

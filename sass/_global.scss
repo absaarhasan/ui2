@@ -62,14 +62,14 @@ body {
 
 }
 
-/*------------- SPLASH BANNER -----------------*/
+
+/*------------- PAGE HEAD -----------------*/
 
 header.page-head {
 
   background-color:$color4;
   position:fixed;
   z-index:10;
-  height:100%;
   width:100%;
   box-sizing: border-box;
 
@@ -77,14 +77,10 @@ header.page-head {
 
   @include drop-shadow(0px, 4px, 8px, 2px, 0.25);
 
-
   h1 {
     color:$color2;
     font-weight:900;
-
     position:absolute;
-
-    @include transition(top, 0.15s, ease-out);
 
     span{
       color:$color1;
@@ -93,38 +89,12 @@ header.page-head {
   }
 
 
-  h2 {
-    font-weight:200;
-    color:$color3;
-    position:absolute;
-    opacity:1;
-
-    @include transition(opacity, 0.2s, ease-out);
-    @include transition(bottom, 0.2s, ease-out);
-
-  }
-
-  /* hidden mini head items */
-
-  h1.min {
-
-    position:absolute;
-    left: -50%;
-
-
-    @include transition(left, 0.15s, ease-out);
-
-
-  }
 
   button {
     position:absolute;
-    right: -50%;
     background-color:transparent;
 
-
     @include transition(right, 0.15s, ease-out);
-
 
     text-indent: -99999px;
     overflow:hidden;
@@ -137,45 +107,56 @@ header.page-head {
       background-image: url('../images/menu_button_hover.svg');
     }
   }
-}
 
-
-/*------------- MINIMISED HEAD -----------------*/
-
-header.page-head.min {
-
-
-
-  h1 {
-
-    top:-400px;
+  h1.logo {
+    @include transition(left, 0.15s, ease-out);
   }
 
-  h2{
+  h1.splash {
+    top:-500px;
+    @include transition(top, 0.15s, ease-out);
+  }
+
+  h2.splash {
+    font-weight:200;
+    color:$color3;
+    position:absolute;
     opacity:0;
-    bottom: 120%;
+    bottom: 500px;
+    @include transition(opacity, 0.2s, ease-out);
+    @include transition(bottom, 0.2s, ease-out);
+
+  }
+
+}
+
+/*------------- SPLASH PAGE -----------------*/
+
+header.page-head.splash {
+
+  height:100%;
+
+  h1.logo{
+    left: -50%;
   }
 
   button {
-
-    @include notransition();
+    right: -50%;
   }
 
+}
+
+section.banner.splash{
+
+  height:1000px;
 
 }
 
 /*------------- MAIN BANNER -----------------*/
 
-section.banner{
 
 
-  height:1000px;
-  @include transition(right, 0.6s, ease-out);
-
-}
-
-section.banner.min{
-
+section.banner {
 
   height:400px;
   @include transition(height, 0.2s, ease-out);

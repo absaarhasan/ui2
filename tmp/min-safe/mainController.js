@@ -24,7 +24,7 @@
             /* jshint validthis: true */
             var vm = this;
 
-            vm.minHead = mainService.minHead;
+            vm.splash = mainService.splash;
             vm.closeSplash = mainService.closeSplash;
 
         }

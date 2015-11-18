@@ -8,7 +8,7 @@
 
         var service = {
 
-            minHead: { state: false },
+            splash: { state: true },
             closeSplash: closeSplash
 
         };
@@ -18,7 +18,7 @@
 
         function closeSplash(display) {
 
-            service.minHead.state = display;
+            service.splash.state = display;
 
         }
 

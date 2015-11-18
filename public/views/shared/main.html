@@ -1,20 +1,18 @@
-<header class="page-head" ng-class="{min: vm.minHead.state}" ng-click="vm.closeSplash(true)">
+<header class="page-head" ng-class="{splash: vm.splash.state}" ng-click="vm.closeSplash(false)">
 
-        <h1><span>UI</span>2</h1>
+        <h1 class="splash"><span>UI</span>2</h1>
+        <h1 class="logo"><span>UI</span>2</h1>
 
-        <h1 class="min"><span>UI</span>2</h1>
-        <h2>Portfolio</h2>
+        <h2 class="splash">Portfolio</h2>
         <button type="button" ng-click="">Menu</button>
 
 </header>
-<section class="banner" ng-class="{min: vm.minHead.state}">
 
+<section class="banner" ng-class="{splash: vm.splash.state}">
 
 </section>
 
 <section ui-view class="main">
-
-
 
 </section>
 

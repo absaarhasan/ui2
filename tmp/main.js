@@ -1,6 +1,4 @@
 
-
-
 'use strict';
 
 //paginatedService.$inject = ['$http'];
@@ -55,7 +53,7 @@ function homeService(  ) {
 
         var service = {
 
-            minHead: { state: false },
+            splash: { state: true },
             closeSplash: closeSplash
 
         };
@@ -65,7 +63,7 @@ function homeService(  ) {
 
         function closeSplash(display) {
 
-            service.minHead.state = display;
+            service.splash.state = display;
 
         }
 
@@ -99,7 +97,7 @@ function homeService(  ) {
             /* jshint validthis: true */
             var vm = this;
 
-            vm.minHead = mainService.minHead;
+            vm.splash = mainService.splash;
             vm.closeSplash = mainService.closeSplash;
 
         }

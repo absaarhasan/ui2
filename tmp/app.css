@@ -15,12 +15,11 @@ body {
   background-position: center;
   background-size: cover; }
 
-/*------------- SPLASH BANNER -----------------*/
+/*------------- PAGE HEAD -----------------*/
 header.page-head {
   background-color: #a1a1a1;
   position: fixed;
   z-index: 10;
-  height: 100%;
   width: 100%;
   box-sizing: border-box;
   -webkit-transition: height 0.15s ease-out;
@@ -30,46 +29,16 @@ header.page-head {
   transition: height 0.15s ease-out;
   -webkit-box-shadow: 0px 4px 8px 2px rgba(2, 18, 28, 0.25);
   -moz-box-shadow: 0px 4px 8px 2px rgba(2, 18, 28, 0.25);
-  box-shadow: 0px 4px 8px 2px rgba(2, 18, 28, 0.25);
-  /* hidden mini head items */ }
+  box-shadow: 0px 4px 8px 2px rgba(2, 18, 28, 0.25); }
   header.page-head h1 {
     color: #fff;
     font-weight: 900;
-    position: absolute;
-    -webkit-transition: top 0.15s ease-out;
-    -moz-transition: top 0.15s ease-out;
-    -o-transition: top 0.15s ease-out;
-    -ms-transition: top 0.15s ease-out;
-    transition: top 0.15s ease-out; }
+    position: absolute; }
     header.page-head h1 span {
       color: #fefd3e;
       line-height: inherit; }
-  header.page-head h2 {
-    font-weight: 200;
-    color: #ccc;
-    position: absolute;
-    opacity: 1;
-    -webkit-transition: opacity 0.2s ease-out;
-    -moz-transition: opacity 0.2s ease-out;
-    -o-transition: opacity 0.2s ease-out;
-    -ms-transition: opacity 0.2s ease-out;
-    transition: opacity 0.2s ease-out;
-    -webkit-transition: bottom 0.2s ease-out;
-    -moz-transition: bottom 0.2s ease-out;
-    -o-transition: bottom 0.2s ease-out;
-    -ms-transition: bottom 0.2s ease-out;
-    transition: bottom 0.2s ease-out; }
-  header.page-head h1.min {
-    position: absolute;
-    left: -50%;
-    -webkit-transition: left 0.15s ease-out;
-    -moz-transition: left 0.15s ease-out;
-    -o-transition: left 0.15s ease-out;
-    -ms-transition: left 0.15s ease-out;
-    transition: left 0.15s ease-out; }
   header.page-head button {
     position: absolute;
-    right: -50%;
     background-color: transparent;
     -webkit-transition: right 0.15s ease-out;
     -moz-transition: right 0.15s ease-out;
@@ -84,30 +53,49 @@ header.page-head {
     background-size: contain; }
     header.page-head button:hover, header.page-head button:active {
       background-image: url("../images/menu_button_hover.svg"); }
+  header.page-head h1.logo {
+    -webkit-transition: left 0.15s ease-out;
+    -moz-transition: left 0.15s ease-out;
+    -o-transition: left 0.15s ease-out;
+    -ms-transition: left 0.15s ease-out;
+    transition: left 0.15s ease-out; }
+  header.page-head h1.splash {
+    top: -500px;
+    -webkit-transition: top 0.15s ease-out;
+    -moz-transition: top 0.15s ease-out;
+    -o-transition: top 0.15s ease-out;
+    -ms-transition: top 0.15s ease-out;
+    transition: top 0.15s ease-out; }
+  header.page-head h2.splash {
+    font-weight: 200;
+    color: #ccc;
+    position: absolute;
+    opacity: 0;
+    bottom: 500px;
+    -webkit-transition: opacity 0.2s ease-out;
+    -moz-transition: opacity 0.2s ease-out;
+    -o-transition: opacity 0.2s ease-out;
+    -ms-transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out;
+    -webkit-transition: bottom 0.2s ease-out;
+    -moz-transition: bottom 0.2s ease-out;
+    -o-transition: bottom 0.2s ease-out;
+    -ms-transition: bottom 0.2s ease-out;
+    transition: bottom 0.2s ease-out; }
 
-/*------------- MINIMISED HEAD -----------------*/
-header.page-head.min h1 {
-  top: -400px; }
-header.page-head.min h2 {
-  opacity: 0;
-  bottom: 120%; }
-header.page-head.min button {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -o-transition: none !important;
-  -ms-transition: none !important;
-  transition: none !important; }
+/*------------- SPLASH PAGE -----------------*/
+header.page-head.splash {
+  height: 100%; }
+  header.page-head.splash h1.logo {
+    left: -50%; }
+  header.page-head.splash button {
+    right: -50%; }
+
+section.banner.splash {
+  height: 1000px; }
 
 /*------------- MAIN BANNER -----------------*/
 section.banner {
-  height: 1000px;
-  -webkit-transition: right 0.6s ease-out;
-  -moz-transition: right 0.6s ease-out;
-  -o-transition: right 0.6s ease-out;
-  -ms-transition: right 0.6s ease-out;
-  transition: right 0.6s ease-out; }
-
-section.banner.min {
   height: 400px;
   -webkit-transition: height 0.2s ease-out;
   -moz-transition: height 0.2s ease-out;
@@ -150,35 +138,37 @@ footer p {
 body {
   background-image: url("../images/bg_wp_2500X1750.jpg"); }
 
-/*------------- SPLASH BANNER -----------------*/
-header.page-head h1 {
-  font-size: 7.5rem;
-  line-height: 7.5rem;
-  top: 2rem;
-  right: 5%; }
-header.page-head h2 {
-  font-size: 3.75rem;
-  line-height: 3.75rem;
-  left: 5%;
-  bottom: 2rem; }
-header.page-head h1.min {
-  font-size: 3.5rem;
-  line-height: 2.5rem;
-  top: 1rem;
-  text-indent: -0.15rem; }
-header.page-head button {
-  top: 1rem;
-  width: 4.5rem;
-  height: 2.5rem;
-  line-height: 0; }
-
-/*------------- MINIMISED HEAD -----------------*/
-header.page-head.min {
+/*------------- PAGE HEAD -----------------*/
+header.page-head {
   height: 4.5rem; }
-  header.page-head.min h1.min {
+  header.page-head h1.logo {
+    font-size: 3.5rem;
+    line-height: 2.5rem;
+    top: 1rem;
+    text-indent: -0.15rem;
     left: 5%; }
-  header.page-head.min button {
+  header.page-head button {
+    top: 1rem;
+    width: 4.5rem;
+    height: 2.5rem;
+    line-height: 0;
     right: 5%; }
+  header.page-head h1.splash {
+    font-size: 7.5rem;
+    line-height: 7.5rem;
+    right: 5%; }
+  header.page-head h2.splash {
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+    left: 5%;
+    bottom: 2rem; }
+
+/*------------- SPLASH PAGE -----------------*/
+header.page-head.splash h1.splash {
+  top: 2rem; }
+header.page-head.splash h2.splash {
+  bottom: 2rem;
+  opacity: 1; }
 
 /*------------- MAIN SECTION -----------------*/
 section.main h2 {
