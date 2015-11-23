@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html ng-app="ui2" >
+<html ng-app="ui2" ng-class="{splash:boolChangeClass}">
 <head>
     <meta charset="utf-8">
     <title>UI2</title>
@@ -17,11 +17,9 @@
     <script src="https://use.typekit.net/unq5vlp.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
-<body>
-
+<body scroll>
 
 <div ui-view></div>
-
 
 <script src="assets/lib/hammer.min.js"></script>
 <script src="assets/lib/angular-resource.min.js"></script>

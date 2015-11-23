@@ -1,6 +1,39 @@
 $base-font-size: 12px;
 $bfs: $base-font-size;
 
+/*------------- BASE FONT -----------------*/
+
+
+$screen: "only screen";
+
+
+  @media #{$screen} and (max-width:800px) { html{font-size:28px;} }
+
+  @media #{$screen} and (max-width:700px) { html{font-size:26px;} }
+
+  @media #{$screen} and (max-width:600px) { html{font-size:24px;} }
+
+  @media #{$screen} and (max-width:500px) { html{font-size:22px;} }
+
+  @media #{$screen} and (max-device-width:800px) { html{font-size:28px;} }
+
+  @media #{$screen} and (max-device-width:700px) { html{font-size:26px;} }
+
+  @media #{$screen} and (max-device-width:600px) { html{font-size:24px;} }
+
+  @media #{$screen} and (max-device-width:500px) { html{font-size:22px;} }
+
+  @media #{$screen} and (max-device-width:400px) { html{font-size:20px;} } //
+
+  @media #{$screen} and (max-device-width:360px) { html{font-size:18px;} } //
+
+  @media #{$screen} and (max-device-width:320px) { html{font-size:16px;} }
+
+  @media #{$screen} and (max-device-width:320px) { html{font-size:14px;} }
+
+
+/*------------- GENERIC -----------------*/
+
 .mobile{
 
   display:inherit;
@@ -11,14 +44,16 @@ $bfs: $base-font-size;
   display:none;
 }
 
+/*------------- BODY -----------------*/
+
 body {
 
   background-image: url('../images/bg_wp_800X560.jpg');
 
 }
 
-/*------------- SPLASH BANNER -----------------*/
-
+/*------------- PAGE HEAD -----------------*/
+/*
 header.page-head {
   h1 {
     font-size: em(50px, $bfs);
@@ -40,7 +75,230 @@ header.page-head {
   }
 }
 
-/*------------- MINIMISED HEAD -----------------*/
+*/
+
+header.page-head {
+
+  height:em(50px, $bfs);
+
+  h1.logo {
+    font-size:em(50px, $bfs);
+    line-height: em(35px, $bfs);
+    top:em(7px, $bfs);
+    text-indent: em(-3px, $bfs);
+    left: 4%;
+
+  }
+
+  button {
+    top:em(7px, $bfs);
+    width:em(70px, $bfs);
+    height:em(35px, $bfs);
+    line-height:0;
+    right: 4%;
+  }
+
+  h1.splash {
+    font-size: em(75px, $bfs);
+    line-height: em(55px, $bfs);
+    right: 5%;
+
+  }
+
+
+  h2.splash {
+    font-size: em(30px, $bfs);
+    line-height: em(25px, $bfs);
+    left: 5%;
+
+  }
+
+}
+
+/*------------- SPLASH PAGE -----------------*/
+
+.splash header.page-head {
+  h1.splash {
+    top: em(20px, $bfs);
+  }
+
+  h2.splash {
+
+    bottom: em(20px, $bfs);
+    opacity:1;
+  }
+}
+
+/*------------- MAIN BANNER -----------------*/
+
+
+
+section.banner {
+
+  ul {
+
+    li {
+      font-size: em(40px, $bfs);
+      line-height: em(40px, $bfs);
+      top: em(-20px, $bfs)
+    }
+
+  }
+
+}
+
+@media #{$screen} and (max-width: 400px) {
+
+  section.banner {
+
+    ul {
+
+      li {
+        font-size: em(30px, $bfs);
+        line-height: em(30px, $bfs);
+        top: em(-15px, $bfs)
+      }
+
+    }
+
+  }
+
+
+}
+
+/*------------- MAIN SECTION -----------------*/
+
+section.main {
+
+
+  h2{
+    margin: 0 5%;
+    padding: em(15px, $bfs) 0;
+    font-size:em(30px, $bfs);
+  }
+
+  section.display {
+    padding: em(10px, $bfs) 5%;
+    background-image: url('../images/floral_bg_tile_250X250.jpg ');
+    background-size: em(125px, $bfs) em(125px, $bfs);
+  }
+
+}
+
+/*------------- HOME DISPLAY -----------------*/
+
+
+section.display {
+
+
+  div.screen {
+
+    width:100%;
+
+    .box {
+
+      .back {
+
+        h3{
+          font-size:em(40px, $bfs);
+          line-height: em(30px, $bfs);
+          margin: em(10px, $bfs) 5%;
+        }
+
+        p.text {
+          font-size:em(12px, $bfs);
+          line-height: em(16px, $bfs);
+          margin:0 5% 0 5%;
+
+        }
+
+        p.button {
+
+          a{
+            height: em(30px, $bfs);
+            width: 45%;
+            bottom:em(10px, $bfs);
+            left:5%;
+            font-size:em(12px, $bfs);
+            line-height: em(16px, $bfs);
+            padding-top:em(7px, $bfs);
+
+          }
+
+        }
+      }
+
+    }
+
+  }
+}
+
+
+@media #{$screen} and (max-width: 400px) {
+
+
+  section.display {
+
+
+    div.screen {
+
+
+
+      .box {
+
+        .back {
+
+          h3{
+            font-size:em(30px, $bfs);
+            line-height: em(25px, $bfs);
+            margin: em(10px, $bfs) 5%;
+          }
+
+          p.text {
+            font-size:em(10px, $bfs);
+            line-height: em(14px, $bfs);
+            margin:0 5% 0 5%;
+
+          }
+
+          p.button {
+
+            a{
+              height: em(25px, $bfs);
+              width: 45%;
+              bottom:em(10px, $bfs);
+              left:5%;
+              font-size:em(10px, $bfs);
+              line-height: em(14px, $bfs);
+              padding-top:em(5px, $bfs);
+
+            }
+
+          }
+        }
+
+      }
+
+    }
+  }
+
+
+}
+
+/*------------- PAGE FOOT -----------------*/
+
+footer{
+
+  p{
+
+    font-size:em(20px, $bfs);
+    margin: 0 5%;
+    padding: em(35px, $bfs) 0;
+  }
+
+}
+
+/*------------- BODY -----------------*/
 
 header.page-head.min {
 

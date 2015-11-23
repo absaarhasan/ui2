@@ -1,4 +1,6 @@
-<header class="page-head" ng-class="{splash: vm.splash.state}" ng-click="vm.closeSplash(false)">
+
+
+<header class="page-head" >
 
         <h1 class="splash"><span>UI</span>2</h1>
         <h1 class="logo"><span>UI</span>2</h1>
@@ -8,11 +10,19 @@
 
 </header>
 
-<section class="banner" ng-class="{splash: vm.splash.state}">
-
-</section>
+<div banner>
+        <ul>
+             <li class="on"><span>UX</span> Design</li>
+             <li><span>Visual</span> Design</li>
+             <li><span>HTML5</span> / CSS3 </li>
+             <li><span>OO</span> JavaScript</li>
+             <li><span>Angular</span> JS</li>
+        </ul>
+</div>
 
 <section ui-view class="main">
 
 </section>
+
+
 

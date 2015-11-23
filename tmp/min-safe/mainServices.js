@@ -1,24 +1,21 @@
 
     'use strict';
 
-//    mainService.$inject = ['$state', '$timeout'];
+    mainService.$inject = ['$window'];
 
-    function mainService( ) {
+    function mainService($window) {
 
 
         var service = {
 
-            splash: { state: true },
-            closeSplash: closeSplash
+            activate: activate
 
         };
 
         return service;
 
+            function activate(){
 
-        function closeSplash(display) {
-
-            service.splash.state = display;
 
         }
 

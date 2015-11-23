@@ -8,6 +8,8 @@ module.exports = function(grunt) {
         },
         app: {
             files: {
+                'tmp/min-safe/directives.js': ['public/views/shared/directives.js'],
+                'tmp/min-safe/homeDirectives.js': ['public/views/home/homeDirectives.js'],
                 'tmp/min-safe/homeServices.js': ['public/views/home/homeServices.js'],
                 'tmp/min-safe/homeController.js': ['public/views/home/homeController.js'],
                 'tmp/min-safe/mainServices.js': ['public/views/shared/mainServices.js'],
@@ -21,6 +23,8 @@ module.exports = function(grunt) {
     grunt.config('concat', {
         scripts: {
             src: [
+                'tmp/min-safe/directives.js',
+                'tmp/min-safe/homeDirectives.js',
                 'tmp/min-safe/homeServices.js',
                 'tmp/min-safe/homeController.js',
                 'tmp/min-safe/mainServices.js',

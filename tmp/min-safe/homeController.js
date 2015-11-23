@@ -5,6 +5,7 @@
     angular.module('ui2.home', ['ui.router'])
         .factory('homeService', homeService)
         .controller('HomeCtrl',  HomeCtrl)
+        .directive('screenShot', screenShot)
         .config(['$stateProvider', function($stateProvider) {
 
             $stateProvider
@@ -23,7 +24,7 @@
 
     function HomeCtrl(homeService ) {
 
-
+        homeService.activate()
 
     }
 

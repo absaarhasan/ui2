@@ -1,10 +1,41 @@
 $base-font-size: 20px;
 $bfs: $base-font-size;
 
+/*------------- BASE FONT -----------------*/
+
+$screen: "only screen";
+
+@media #{$screen} and (min-width: 801px) { html{font-size:16px;} }
+
+@media #{$screen} and (min-width: 1000px) { html{font-size:18px;} }
+
+@media #{$screen} and (min-width: 1000px) and (min-height: 600px){ html{font-size:16px;} }
+
+@media #{$screen} and (min-width: 1200px) { html{font-size:20px;} }
+
+@media #{$screen} and (min-width: 1400px) { html{font-size:22px;} }
+
+@media #{$screen} and (min-width: 1600px) { html{font-size:24px;} }
+
+@media #{$screen} and (min-width: 1800px) { html{font-size:26px;} }
+
+@media #{$screen} and (min-width: 2000px) { html{font-size:28px;} }
+
+@media #{$screen} and (min-width: 2200px) { html{font-size:30px;} }
+
+@media #{$screen} and (min-width: 2400px) { html{font-size:32px;} }
+
+@media #{$screen} and (min-width: 2600px) { html{font-size:34px;} }
+
+
+/*------------- GENERIC -----------------*/
+
 .mobile{
 
   display:none;
 }
+
+/*------------- BODY -----------------*/
 
 body {
 
@@ -54,7 +85,7 @@ header.page-head {
 
 /*------------- SPLASH PAGE -----------------*/
 
-header.page-head.splash {
+.splash header.page-head {
   h1.splash {
     top: em(40px, $bfs);
   }
@@ -66,6 +97,42 @@ header.page-head.splash {
   }
 }
 
+/*------------- MAIN BANNER -----------------*/
+
+
+
+section.banner {
+
+  ul {
+
+    li {
+      font-size: em(120px, $bfs);
+      line-height: em(120px, $bfs);
+      top: em(-60px, $bfs)
+    }
+
+  }
+
+}
+
+@media #{$screen} and (min-width: 1400px) {
+
+  section.banner {
+
+    ul {
+
+      li {
+        font-size: em(100px, $bfs);
+        line-height: em(100px, $bfs);
+        top: em(-50px, $bfs)
+      }
+
+    }
+
+  }
+
+
+}
 
 /*------------- MAIN SECTION -----------------*/
 
@@ -88,13 +155,156 @@ section.main {
 
 /*------------- HOME DISPLAY -----------------*/
 
-section.display {
 
-  div.screen {
+  @media #{$screen} and (min-width: 801px) {
 
+    div.screen {
+
+        width:50%;
+
+        .box {
+
+          .back {
+
+            h3{
+              font-size:em(105px, $bfs);
+              line-height: em(85px, $bfs);
+              margin: em(30px, $bfs) 5%;
+            }
+
+            p.text {
+              font-size:em(24px, $bfs);
+              line-height: em(32px, $bfs);
+              margin:0 5% 0 5%;
+
+            }
+
+            p.button {
+
+              a{
+                height: em(75px, $bfs);
+                width: 45%;
+                bottom:em(30px, $bfs);
+                left:5%;
+                font-size:em(24px, $bfs);
+                line-height: em(32px, $bfs);
+                padding-top:em(22px, $bfs);
+
+              }
+
+            }
+          }
+
+        }
+    }
 
   }
-}
+
+  @media #{$screen} and (min-width: 1200px) {
+
+    div.screen {
+
+      width:33.333333%;
+
+      .box {
+
+        .back {
+
+          h3{
+            font-size:em(65px, $bfs);
+            line-height: em(45px, $bfs);
+            margin: em(20px, $bfs) 5%;
+          }
+
+          p.text {
+            font-size:em(16px, $bfs);
+            line-height: em(20px, $bfs);
+            margin:0 5% 0 5%;
+
+          }
+
+          p.button {
+
+            a{
+              height: em(40px, $bfs);
+              width: 45%;
+              bottom:em(20px, $bfs);
+              left:5%;
+              font-size:em(16px, $bfs);
+              line-height: em(20px, $bfs);
+              padding-top:em(10px, $bfs);
+
+            }
+
+          }
+        }
+
+      }
+
+
+    }
+  }
+
+  @media #{$screen} and (min-width: 1400px) {
+
+    div.screen {
+
+      width:25%;
+
+      .box {
+
+        .back {
+
+          h3{
+            font-size:em(45px, $bfs);
+            line-height: em(35px, $bfs);
+            margin: em(15px, $bfs) 5%;
+          }
+
+          p.text {
+            font-size:em(14px, $bfs);
+            line-height: em(18px, $bfs);
+            margin:0 5% 0 5%;
+
+          }
+
+          p.button {
+
+            a{
+              height: em(40px, $bfs);
+              width: 45%;
+              bottom:em(15px, $bfs);
+              left:5%;
+              font-size:em(14px, $bfs);
+              line-height: em(20px, $bfs);
+              padding-top:em(11px, $bfs);
+
+            }
+
+          }
+        }
+
+      }
+    }
+  }
+
+  @media #{$screen} and (min-width: 1800px) {
+
+    div.screen {
+
+      width:20%;
+
+    }
+
+  }
+
+
+
+
+
+
+
+
 
 
 /*------------- PAGE FOOT -----------------*/

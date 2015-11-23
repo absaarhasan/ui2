@@ -5,6 +5,7 @@
         angular.module('ui2.main', ['ui.router'])
             .factory('mainService', mainService)
             .controller('MainCtrl',  MainCtrl)
+            .directive('banner', banner)
             .config(function($stateProvider) {
                 $stateProvider
 
@@ -24,8 +25,9 @@
             /* jshint validthis: true */
             var vm = this;
 
-            vm.splash = mainService.splash;
-            vm.closeSplash = mainService.closeSplash;
+
+
+            mainService.activate()
 
         }
 

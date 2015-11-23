@@ -3,11 +3,7 @@
 $color1: #fefd3e; //yellow
 $color2: #fff;
 $color3: #ccc; //strap txt
-
-$color4: #a1a1a1; //h1 txt
-
 $color4: #a1a1a1; // head bg
-
 
 
 /*------------- FUNCTIONS -----------------*/
@@ -33,6 +29,14 @@ $color4: #a1a1a1; // head bg
   transition: $property $time $type;
 }
 
+@mixin transitionMulti2 ($property, $time, $type, $property2, $time2, $type2) {
+  -webkit-transition: $property $time $type , $property2 $time2 $type2;
+  -moz-transition: $property $time $type , $property2 $time2 $type2;
+  -o-transition: $property $time $type , $property2 $time2 $type2;
+  -ms-transition: $property $time $type , $property2 $time2 $type2;
+  transition: $property $time $type , $property2 $time2 $type2;
+}
+
 @mixin notransition {
   -webkit-transition: none !important;
   -moz-transition: none !important;
@@ -53,12 +57,16 @@ $color4: #a1a1a1; // head bg
 
 }
 
+
+
 body {
 
   background-attachment:fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @include transition(background-position, 0.15s, linear);
 
 }
 
@@ -132,23 +140,23 @@ header.page-head {
 
 /*------------- SPLASH PAGE -----------------*/
 
-header.page-head.splash {
+.splash header.page-head {
 
   height:100%;
 
   h1.logo{
-    left: -50%;
+    left: -400px;
   }
 
   button {
-    right: -50%;
+    right: -400px;
   }
 
 }
 
-section.banner.splash{
+.splash section.banner ul{
 
-  height:1000px;
+  left: 20%;
 
 }
 
@@ -157,9 +165,53 @@ section.banner.splash{
 
 
 section.banner {
+  display:block;
+  position:relative;
+  overflow:hidden;
 
-  height:400px;
   @include transition(height, 0.2s, ease-out);
+
+  ul {
+
+    list-style-type: none;
+    position:absolute;
+    left:0;
+    width:100%;
+
+    @include transition(left, 1s, ease-out);
+
+    li {
+      position:absolute;
+      width:100%;
+      top:0;
+      text-align:center;
+      color: $color2;
+      font-weight: 900;
+      opacity:0;
+      left:5%;
+      z-index:0;
+
+
+      @include transitionMulti2(opacity, 1s, ease-out , left, 1s, ease-out);
+        span {
+
+          color:$color1;
+
+        }
+
+
+    }
+
+    li.on {
+
+      opacity:1;
+      left:0;
+      z-index:1;
+
+    }
+
+
+  }
 
 }
 
@@ -174,6 +226,9 @@ section.main{
 
     color:$color4;
     font-weight:200;
+    opacity:1;
+
+    @include transition(opacity, 0.75s ,ease-in-out);
 
   }
 
@@ -182,6 +237,23 @@ section.main{
 
     background-repeat: repeat;
 
+  }
+
+}
+
+/*------------- MAIN ANIMATIONS-----------------*/
+
+.splash section.main {
+
+  h2 {
+
+    opacity:0;
+
+  }
+
+  section.display div.screen {
+
+    right:-25px;
 
   }
 
@@ -195,20 +267,85 @@ section.display {
   letter-spacing: 0;
   font-size:0;
 
+
   div.screen {
 
-
-    border-left:1px solid transparent;
-    border-right:1px solid transparent;
-    width:50%;
     display: inline-block;
     box-sizing: border-box;
+    position:relative;
+    right:0;
+
+    perspective: 800px;
+
+    @include transition(right, 0.4s, ease-out);
+
+    .box {
+
+      transform-style: preserve-3d;
+      transition: transform 1s;
+      display:inline-block;
+      width:100%;
+      position:relative;
+
+      div {
+        width:100%;
+        backface-visibility: hidden;
+      }
+
+      .back {
+        background: $color1;
+        height:100% ;
+        transform: rotateY( 180deg );
+        position:absolute;
+        top:0;
+        width:100%;
+
+          h3{
+              color:$color4;
+              font-weight:400;
+
+          }
+
+          p.text {
+            color:$color4;
+            font-weight:400;
+
+          }
+
+          p.button {
+
+              a {
+
+                position:absolute;
+                text-align:center;
+                color:$color2;
+                font-weight:400;
+                box-sizing: border-box;
+                background-color:$color4;
+                text-decoration:none;
+              }
+
+              a:hover {
+
+                color:$color1;
+
+              }
+          }
+      }
+
+    }
+
+    .box.flipped {
+      transform: rotateY( 180deg );
+    }
 
     img {
 
       width:100%;
       height: auto;
     }
+
+
   }
 }
 
