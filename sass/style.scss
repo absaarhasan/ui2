@@ -8,8 +8,8 @@
 $screen: "only screen";
 
 
-@media  #{$screen} and (max-device-width:800px),
-#{$screen} and (max-width: 800px)
+@media  #{$screen} and (max-device-width:767px),
+#{$screen} and (max-width: 767px)
 {
 
   @import 'mobile';
@@ -52,7 +52,7 @@ $screen: "only screen";
 
 {
 
-  html{font-size:20px;}
+  html{font-size:18px;}
 }
 
 

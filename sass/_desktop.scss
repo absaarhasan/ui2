@@ -5,7 +5,7 @@ $bfs: $base-font-size;
 
 $screen: "only screen";
 
-@media #{$screen} and (min-width: 801px) { html{font-size:16px;} }
+@media #{$screen} and (min-width: 768px) { html{font-size:16px;} }
 
 @media #{$screen} and (min-width: 1000px) { html{font-size:18px;} }
 
@@ -97,6 +97,40 @@ header.page-head {
   }
 }
 
+/*------------- MAIN NAV -----------------*/
+
+nav {
+
+
+  button {
+
+    top:em(20px, $bfs);
+    width:em(71px, $bfs);
+    height:em(71px, $bfs);
+    line-height:0;
+    right: 5%;
+
+  }
+
+  ul {
+
+    top:em(200px, $bfs);
+    left:5%;
+
+    li {
+      font-size: em(65px, $bfs);
+      line-height: em(65px, $bfs);
+      margin-bottom: em(45px, $bfs);
+      padding-left: em(125px, $bfs);
+      }
+  }
+
+
+
+
+
+}
+
 /*------------- MAIN BANNER -----------------*/
 
 
@@ -156,7 +190,7 @@ section.main {
 /*------------- HOME DISPLAY -----------------*/
 
 
-  @media #{$screen} and (min-width: 801px) {
+  @media #{$screen} and (min-width: 768px) {
 
     div.screen {
 
@@ -167,14 +201,14 @@ section.main {
           .back {
 
             h3{
-              font-size:em(105px, $bfs);
-              line-height: em(85px, $bfs);
-              margin: em(30px, $bfs) 5%;
+              font-size:em(85px, $bfs);
+              line-height: em(75px, $bfs);
+              margin: em(20px, $bfs) 5%;
             }
 
             p.text {
-              font-size:em(24px, $bfs);
-              line-height: em(32px, $bfs);
+              font-size:em(18px, $bfs);
+              line-height: em(24px, $bfs);
               margin:0 5% 0 5%;
 
             }
@@ -182,13 +216,13 @@ section.main {
             p.button {
 
               a{
-                height: em(75px, $bfs);
+                height: em(45px, $bfs);
                 width: 45%;
-                bottom:em(30px, $bfs);
+                bottom:em(20px, $bfs);
                 left:5%;
-                font-size:em(24px, $bfs);
-                line-height: em(32px, $bfs);
-                padding-top:em(22px, $bfs);
+                font-size:em(18px, $bfs);
+                line-height: em(24px, $bfs);
+                padding-top:em(10px, $bfs);
 
               }
 
@@ -200,7 +234,51 @@ section.main {
 
   }
 
-  @media #{$screen} and (min-width: 1200px) {
+@media #{$screen} and (min-width: 850px) {
+
+  div.screen {
+
+    width:50%;
+
+    .box {
+
+      .back {
+
+        h3{
+          font-size:em(95px, $bfs);
+          line-height: em(75px, $bfs);
+          margin: em(25px, $bfs) 5%;
+        }
+
+        p.text {
+          font-size:em(22px, $bfs);
+          line-height: em(28px, $bfs);
+          margin:0 5% 0 5%;
+
+        }
+
+        p.button {
+
+          a{
+            height: em(60px, $bfs);
+            width: 45%;
+            bottom:em(25px, $bfs);
+            left:5%;
+            font-size:em(22px, $bfs);
+            line-height: em(28px, $bfs);
+            padding-top:em(15px, $bfs);
+
+          }
+
+        }
+      }
+
+    }
+  }
+
+}
+
+  @media #{$screen} and (min-width: 1000px) {
 
     div.screen {
 
@@ -213,7 +291,7 @@ section.main {
           h3{
             font-size:em(65px, $bfs);
             line-height: em(45px, $bfs);
-            margin: em(20px, $bfs) 5%;
+            margin: em(25px, $bfs) 5%;
           }
 
           p.text {
@@ -226,13 +304,13 @@ section.main {
           p.button {
 
             a{
-              height: em(40px, $bfs);
+              height: em(55px, $bfs);
               width: 45%;
-              bottom:em(20px, $bfs);
+              bottom:em(25px, $bfs);
               left:5%;
               font-size:em(16px, $bfs);
               line-height: em(20px, $bfs);
-              padding-top:em(10px, $bfs);
+              padding-top:em(15px, $bfs);
 
             }
 
@@ -245,7 +323,7 @@ section.main {
     }
   }
 
-  @media #{$screen} and (min-width: 1400px) {
+  @media #{$screen} and (min-width: 1250px) {
 
     div.screen {
 
@@ -277,7 +355,7 @@ section.main {
               left:5%;
               font-size:em(14px, $bfs);
               line-height: em(20px, $bfs);
-              padding-top:em(11px, $bfs);
+              padding-top:em(9px, $bfs);
 
             }
 
@@ -288,11 +366,46 @@ section.main {
     }
   }
 
-  @media #{$screen} and (min-width: 1800px) {
+  @media #{$screen} and (min-width: 1750px) {
 
     div.screen {
 
       width:20%;
+
+      .box {
+
+        .back {
+
+          h3{
+            font-size:em(35px, $bfs);
+            line-height: em(25px, $bfs);
+            margin: em(15px, $bfs) 5%;
+          }
+
+          p.text {
+            font-size:em(12px, $bfs);
+            line-height: em(16px, $bfs);
+            margin:0 5% 0 5%;
+
+          }
+
+          p.button {
+
+            a{
+              height: em(35px, $bfs);
+              width: 45%;
+              bottom:em(15px, $bfs);
+              left:5%;
+              font-size:em(12px, $bfs);
+              line-height: em(16px, $bfs);
+              padding-top:em(9px, $bfs);
+
+            }
+
+          }
+        }
+
+      }
 
     }
 

@@ -6,9 +6,19 @@
         <h1 class="logo"><span>UI</span>2</h1>
 
         <h2 class="splash">Portfolio</h2>
-        <button type="button" ng-click="">Menu</button>
+        <button type="button" ng-click="vm.menuDisplay()">Menu</button>
 
 </header>
+
+<nav ng-class="{off:vm.menuState.state}">
+    <button type="button" ng-click="vm.menuDisplay()">Close</button>
+    <ul>
+        <li class="email"><a href="mailto:absaarcv@outlook.com">absaarcv@outlook.com</a></li>
+        <li class="phone"><a href="tel:07584497640">07584 497640</a></li>
+        <li target="_blank" class="linkedin"><a href="http://www.linkedin.com/in/absaar-hasan-43a08195">Linked In</a></li>
+        <li target="_blank" class="github"><a href="http://github.com/absaarhasan">Github</a></li>
+    </ul>
+</nav>
 
 <div banner>
         <ul>

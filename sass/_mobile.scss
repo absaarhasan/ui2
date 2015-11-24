@@ -15,21 +15,15 @@ $screen: "only screen";
 
   @media #{$screen} and (max-width:500px) { html{font-size:22px;} }
 
-  @media #{$screen} and (max-device-width:800px) { html{font-size:28px;} }
+  @media #{$screen} and (max-width:400px) { html{font-size:20px;} } //
 
-  @media #{$screen} and (max-device-width:700px) { html{font-size:26px;} }
+  @media #{$screen} and (max-width:375px) { html{font-size:18px;} } //
 
-  @media #{$screen} and (max-device-width:600px) { html{font-size:24px;} }
+  @media #{$screen} and (max-width:350px) { html{font-size:16px;} }
 
-  @media #{$screen} and (max-device-width:500px) { html{font-size:22px;} }
+  @media #{$screen} and (max-width:325px) { html{font-size:14px;} }
 
-  @media #{$screen} and (max-device-width:400px) { html{font-size:20px;} } //
-
-  @media #{$screen} and (max-device-width:360px) { html{font-size:18px;} } //
-
-  @media #{$screen} and (max-device-width:320px) { html{font-size:16px;} }
-
-  @media #{$screen} and (max-device-width:320px) { html{font-size:14px;} }
+  @media #{$screen} and (max-width:300px) { html{font-size:12px;} }
 
 
 /*------------- GENERIC -----------------*/
@@ -127,6 +121,40 @@ header.page-head {
     bottom: em(20px, $bfs);
     opacity:1;
   }
+}
+
+/*------------- MAIN NAV -----------------*/
+
+nav {
+
+
+  button {
+
+    top:em(7px, $bfs);
+    width:em(35px, $bfs);
+    height:em(35px, $bfs);
+    line-height:0;
+    right: 4%;
+
+  }
+
+  ul {
+
+    top:em(100px, $bfs);
+    left:5%;
+
+    li {
+      font-size: em(16px, $bfs);
+      line-height: em(16px, $bfs);
+      margin-bottom: em(30px, $bfs);
+      padding-left: em(24px, $bfs);
+    }
+  }
+
+
+
+
+
 }
 
 /*------------- MAIN BANNER -----------------*/
@@ -234,7 +262,7 @@ section.display {
 }
 
 
-@media #{$screen} and (max-width: 400px) {
+@media #{$screen} and (max-width: 450px) {
 
 
   section.display {
@@ -250,8 +278,8 @@ section.display {
 
           h3{
             font-size:em(30px, $bfs);
-            line-height: em(25px, $bfs);
-            margin: em(10px, $bfs) 5%;
+            line-height: em(20px, $bfs);
+            margin: em(15px, $bfs) 5%;
           }
 
           p.text {
@@ -266,7 +294,7 @@ section.display {
             a{
               height: em(25px, $bfs);
               width: 45%;
-              bottom:em(10px, $bfs);
+              bottom:em(15px, $bfs);
               left:5%;
               font-size:em(10px, $bfs);
               line-height: em(14px, $bfs);
@@ -284,6 +312,8 @@ section.display {
 
 
 }
+
+
 
 /*------------- PAGE FOOT -----------------*/
 

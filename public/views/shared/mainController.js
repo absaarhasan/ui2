@@ -25,7 +25,8 @@
             /* jshint validthis: true */
             var vm = this;
 
-
+            vm.menuState = mainService.menuState;
+            vm.menuDisplay = mainService.menuDisplay;
 
             mainService.activate()
 
