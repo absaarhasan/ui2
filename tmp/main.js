@@ -5,7 +5,7 @@ function scroll($window, $timeout) {
 
         $timeout(function(){
             scope.docReady = true;
-        });
+        }, 10);
 
         scope.boolChangeClass = true;
 
