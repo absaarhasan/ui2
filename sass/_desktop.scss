@@ -411,10 +411,318 @@ section.main {
 
   }
 
+/* high res desktop */
 
 
+@media #{$screen} and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), #{$screen} and (min-width: 768px) and (min-resolution: 192dpi)  {
+
+  div.screen {
+
+    width:50%;
+
+    .box {
+
+      .back {
+
+        h3{
+          font-size:em(55px, $bfs);
+          line-height: em(40px, $bfs);
+          margin: em(15px, $bfs) 5%;
+        }
+
+        p.text {
+          font-size:em(14px, $bfs);
+          line-height: em(22px, $bfs);
+          margin:0 5% 0 5%;
+
+        }
+
+        p.button {
+
+          a{
+            height: em(35px, $bfs);
+            width: 45%;
+            bottom:em(15px, $bfs);
+            left:5%;
+            font-size:em(14px, $bfs);
+            line-height: em(22px, $bfs);
+            padding-top:em(6px, $bfs);
+
+          }
+
+        }
+      }
+
+    }
+  }
+
+}
 
 
+@media #{$screen} and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), #{$screen} and (min-width: 768px) and (min-resolution: 192dpi)  {
+
+  div.screen {
+
+    width:50%;
+
+    .box {
+
+      .back {
+
+        h3{
+          font-size:em(70px, $bfs);
+          line-height: em(50px, $bfs);
+          margin: em(20px, $bfs) 5%;
+        }
+
+        p.text {
+          font-size:em(18px, $bfs);
+          line-height: em(26px, $bfs);
+          margin:0 5% 0 5%;
+
+        }
+
+        p.button {
+
+          a{
+            height: em(45px, $bfs);
+            width: 45%;
+            bottom:em(20px, $bfs);
+            left:5%;
+            font-size:em(18px, $bfs);
+            line-height: em(26px, $bfs);
+            padding-top:em(10px, $bfs);
+
+          }
+
+        }
+      }
+
+    }
+  }
+
+}
+
+
+@media #{$screen} and (min-width: 1250px) and (-webkit-min-device-pixel-ratio: 2), #{$screen} and (min-width: 1250px) and (min-resolution: 192dpi)  {
+
+  div.screen {
+
+    width:33.333333333%;
+
+    .box {
+
+      .back {
+
+        h3{
+          font-size:em(60px, $bfs);
+          line-height: em(45px, $bfs);
+          margin: em(15px, $bfs) 5%;
+        }
+
+        p.text {
+          font-size:em(16px, $bfs);
+          line-height: em(24px, $bfs);
+          margin:0 5% 0 5%;
+
+        }
+
+        p.button {
+
+          a{
+            height: em(35px, $bfs);
+            width: 45%;
+            bottom:em(15px, $bfs);
+            left:5%;
+            font-size:em(16px, $bfs);
+            line-height: em(24px, $bfs);
+            padding-top:em(6px, $bfs);
+
+          }
+
+        }
+      }
+
+    }
+  }
+
+}
+
+@media #{$screen} and (min-width: 1500px) and (-webkit-min-device-pixel-ratio: 2), #{$screen} and (min-width: 1500px) and (min-resolution: 192dpi)  {
+
+  div.screen {
+
+    width:33.333333333%;
+
+    .box {
+
+      .back {
+
+        h3{
+          font-size:em(75px, $bfs);
+          line-height: em(55px, $bfs);
+          margin: em(20px, $bfs) 5%;
+        }
+
+        p.text {
+          font-size:em(18px, $bfs);
+          line-height: em(26px, $bfs);
+          margin:0 5% 0 5%;
+
+        }
+
+        p.button {
+
+          a{
+            height: em(40px, $bfs);
+            width: 45%;
+            bottom:em(18px, $bfs);
+            left:5%;
+            font-size:em(18px, $bfs);
+            line-height: em(26px, $bfs);
+            padding-top:em(8px, $bfs);
+
+          }
+
+        }
+      }
+
+    }
+  }
+
+}
+
+@media #{$screen} and (min-width: 1750px) and (-webkit-min-device-pixel-ratio: 2), #{$screen} and (min-width: 1750px) and (min-resolution: 192dpi)  {
+
+  div.screen {
+
+    width:25%;
+
+    .box {
+
+      .back {
+
+        h3{
+          font-size:em(65px, $bfs);
+          line-height: em(45px, $bfs);
+          margin: em(20px, $bfs) 5%;
+        }
+
+        p.text {
+          font-size:em(16px, $bfs);
+          line-height: em(24px, $bfs);
+          margin:0 5% 0 5%;
+
+        }
+
+        p.button {
+
+          a{
+            height: em(40px, $bfs);
+            width: 45%;
+            bottom:em(20px, $bfs);
+            left:5%;
+            font-size:em(16px, $bfs);
+            line-height: em(24px, $bfs);
+            padding-top:em(8px, $bfs);
+
+          }
+
+        }
+      }
+
+    }
+  }
+
+}
+
+@media #{$screen} and (min-width: 2000px) and (-webkit-min-device-pixel-ratio: 2), #{$screen} and (min-width: 2000px) and (min-resolution: 192dpi)  {
+
+  div.screen {
+
+    width:25%;
+
+    .box {
+
+      .back {
+
+        h3{
+          font-size:em(75px, $bfs);
+          line-height: em(50px, $bfs);
+          margin: em(25px, $bfs) 5%;
+        }
+
+        p.text {
+          font-size:em(18px, $bfs);
+          line-height: em(24px, $bfs);
+          margin:0 5% 0 5%;
+
+        }
+
+        p.button {
+
+          a{
+            height: em(45px, $bfs);
+            width: 45%;
+            bottom:em(20px, $bfs);
+            left:5%;
+            font-size:em(18px, $bfs);
+            line-height: em(24px, $bfs);
+            padding-top:em(10px, $bfs);
+
+          }
+
+        }
+      }
+
+    }
+  }
+
+}
+
+@media #{$screen} and (min-width: 2250px) and (-webkit-min-device-pixel-ratio: 2), #{$screen} and (min-width: 2250px) and (min-resolution: 192dpi)  {
+
+  div.screen {
+
+    width:20%;
+
+    .box {
+
+      .back {
+
+        h3{
+          font-size:em(65px, $bfs);
+          line-height: em(45px, $bfs);
+          margin: em(20px, $bfs) 5%;
+        }
+
+        p.text {
+          font-size:em(16px, $bfs);
+          line-height: em(22px, $bfs);
+          margin:0 5% 0 5%;
+
+        }
+
+        p.button {
+
+          a{
+            height: em(40px, $bfs);
+            width: 45%;
+            bottom:em(20px, $bfs);
+            left:5%;
+            font-size:em(16px, $bfs);
+            line-height: em(24px, $bfs);
+            padding-top:em(8px, $bfs);
+
+          }
+
+        }
+      }
+
+    }
+  }
+
+}
 
 
 

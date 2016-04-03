@@ -1,7 +1,11 @@
-scroll.$inject = ['$window'];
+scroll.$inject = ['$window', '$timeout'];
 
-function scroll($window) {
+function scroll($window, $timeout) {
     return function(scope, element) {
+
+        $timeout(function(){
+            scope.docReady = true;
+        });
 
         scope.boolChangeClass = true;
 

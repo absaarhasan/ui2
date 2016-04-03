@@ -59,16 +59,21 @@ $color5: #99b1c7; // menu bg
 }
 
 
-
 body {
 
   background-attachment:fixed;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center -5000px;
   background-size: cover;
   overflow-x: hidden;
 
   @include transition(background-position, 0.15s, linear);
+
+}
+
+html.loaded body {
+
+  background-position: center center;
 
 }
 
@@ -267,7 +272,7 @@ section.banner {
     left:0;
     width:100%;
 
-    @include transition(left, 1s, ease-out);
+    @include transitionMulti2(left, 1s, ease-out , bottom , 0.4s , ease-out);
 
     li {
       position:absolute;

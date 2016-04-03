@@ -12,7 +12,7 @@
 body {
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center -5000px;
   background-size: cover;
   overflow-x: hidden;
   -webkit-transition: background-position 0.15s linear;
@@ -20,6 +20,9 @@ body {
   -o-transition: background-position 0.15s linear;
   -ms-transition: background-position 0.15s linear;
   transition: background-position 0.15s linear; }
+
+html.loaded body {
+  background-position: center center; }
 
 /*------------- PAGE HEAD -----------------*/
 header.page-head {
@@ -171,11 +174,11 @@ section.banner {
     position: absolute;
     left: 0;
     width: 100%;
-    -webkit-transition: left 1s ease-out;
-    -moz-transition: left 1s ease-out;
-    -o-transition: left 1s ease-out;
-    -ms-transition: left 1s ease-out;
-    transition: left 1s ease-out; }
+    -webkit-transition: left 1s ease-out, bottom 0.4s ease-out;
+    -moz-transition: left 1s ease-out, bottom 0.4s ease-out;
+    -o-transition: left 1s ease-out, bottom 0.4s ease-out;
+    -ms-transition: left 1s ease-out, bottom 0.4s ease-out;
+    transition: left 1s ease-out, bottom 0.4s ease-out; }
     section.banner ul li {
       position: absolute;
       width: 100%;
@@ -527,6 +530,140 @@ section.main section.display {
       font-size: 0.6rem;
       line-height: 0.8rem;
       padding-top: 0.45rem; } }
+/* high res desktop */
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  div.screen {
+    width: 50%; }
+    div.screen .box .back h3 {
+      font-size: 2.75rem;
+      line-height: 2rem;
+      margin: 0.75rem 5%; }
+    div.screen .box .back p.text {
+      font-size: 0.7rem;
+      line-height: 1.1rem;
+      margin: 0 5% 0 5%; }
+    div.screen .box .back p.button a {
+      height: 1.75rem;
+      width: 45%;
+      bottom: 0.75rem;
+      left: 5%;
+      font-size: 0.7rem;
+      line-height: 1.1rem;
+      padding-top: 0.3rem; } }
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  div.screen {
+    width: 50%; }
+    div.screen .box .back h3 {
+      font-size: 3.5rem;
+      line-height: 2.5rem;
+      margin: 1rem 5%; }
+    div.screen .box .back p.text {
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+      margin: 0 5% 0 5%; }
+    div.screen .box .back p.button a {
+      height: 2.25rem;
+      width: 45%;
+      bottom: 1rem;
+      left: 5%;
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+      padding-top: 0.5rem; } }
+@media only screen and (min-width: 1250px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1250px) and (min-resolution: 192dpi) {
+  div.screen {
+    width: 33.333333333%; }
+    div.screen .box .back h3 {
+      font-size: 3rem;
+      line-height: 2.25rem;
+      margin: 0.75rem 5%; }
+    div.screen .box .back p.text {
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+      margin: 0 5% 0 5%; }
+    div.screen .box .back p.button a {
+      height: 1.75rem;
+      width: 45%;
+      bottom: 0.75rem;
+      left: 5%;
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+      padding-top: 0.3rem; } }
+@media only screen and (min-width: 1500px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1500px) and (min-resolution: 192dpi) {
+  div.screen {
+    width: 33.333333333%; }
+    div.screen .box .back h3 {
+      font-size: 3.75rem;
+      line-height: 2.75rem;
+      margin: 1rem 5%; }
+    div.screen .box .back p.text {
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+      margin: 0 5% 0 5%; }
+    div.screen .box .back p.button a {
+      height: 2rem;
+      width: 45%;
+      bottom: 0.9rem;
+      left: 5%;
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+      padding-top: 0.4rem; } }
+@media only screen and (min-width: 1750px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1750px) and (min-resolution: 192dpi) {
+  div.screen {
+    width: 25%; }
+    div.screen .box .back h3 {
+      font-size: 3.25rem;
+      line-height: 2.25rem;
+      margin: 1rem 5%; }
+    div.screen .box .back p.text {
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+      margin: 0 5% 0 5%; }
+    div.screen .box .back p.button a {
+      height: 2rem;
+      width: 45%;
+      bottom: 1rem;
+      left: 5%;
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+      padding-top: 0.4rem; } }
+@media only screen and (min-width: 2000px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 2000px) and (min-resolution: 192dpi) {
+  div.screen {
+    width: 25%; }
+    div.screen .box .back h3 {
+      font-size: 3.75rem;
+      line-height: 2.5rem;
+      margin: 1.25rem 5%; }
+    div.screen .box .back p.text {
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+      margin: 0 5% 0 5%; }
+    div.screen .box .back p.button a {
+      height: 2.25rem;
+      width: 45%;
+      bottom: 1rem;
+      left: 5%;
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+      padding-top: 0.5rem; } }
+@media only screen and (min-width: 2250px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 2250px) and (min-resolution: 192dpi) {
+  div.screen {
+    width: 20%; }
+    div.screen .box .back h3 {
+      font-size: 3.25rem;
+      line-height: 2.25rem;
+      margin: 1rem 5%; }
+    div.screen .box .back p.text {
+      font-size: 0.8rem;
+      line-height: 1.1rem;
+      margin: 0 5% 0 5%; }
+    div.screen .box .back p.button a {
+      height: 2rem;
+      width: 45%;
+      bottom: 1rem;
+      left: 5%;
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+      padding-top: 0.4rem; } }
 /*------------- PAGE FOOT -----------------*/
 footer p {
   font-size: 1rem;

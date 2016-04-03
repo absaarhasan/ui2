@@ -1,0 +1,93 @@
+*{
+
+    font-family: 'filson-pro'; //200,900
+    color:#fff;
+    border:0;
+    padding:0;
+    margin:0;
+    outline:none;
+}
+
+
+body {
+
+    background-color:#a1a1a1;
+    padding-bottom:2rem;
+}
+
+header {
+
+
+    margin:2em 5% 0 5%;
+
+
+
+
+}
+
+h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size:4rem;
+
+
+
+}
+
+h1 span{
+    color:#fefd3e;
+
+}
+
+section {
+    margin:2em 5% 0 5%;
+
+
+}
+
+h2 {
+    font-weight:400;
+    font-size:2rem;
+    color:#fff;
+
+}
+
+ul {
+    margin-top: 1rem;
+    list-style-type: none;
+    line-height:0;
+    font-size:0;
+
+}
+
+li {
+
+    display:inline-block;
+    margin: 0 0.5rem 0.5rem 0 ;
+
+}
+
+a {
+    box-sizing: border-box;
+    display:inline-block;
+    border:1px solid #fff;
+
+}
+
+a:hover {
+
+    border:1px solid #fefd3e;
+
+}
+
+img{
+
+    margin:0.5rem;
+}
+
+p{
+    font-size:1rem;
+    color:#fff;
+    margin-top:0.5rem;
+}
+
